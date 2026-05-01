@@ -135,13 +135,13 @@ export default function UsersPage() {
 
   const openCreateModal = () => {
       setEditingUser(null);
-      setForm(initialFormState);
+      // setForm(initialFormState);
       setIsModalOpen(true);
     };
   
     const openEditModal = (user: User) => {
       setEditingUser(user);
-      setForm(user);
+      // setForm(user);
       setIsModalOpen(true);
     };
 
