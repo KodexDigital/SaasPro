@@ -24,7 +24,20 @@ export default function AppLayout() {
     { label: "Dashboard", path: "/app/dashboard", icon: LayoutDashboard },
     { label: "Organizations", path: "/app/organizations", icon: Building2 },
     { label: "Users", path: "/app/users", icon: Users },
-    { label: "Workflows", path: "/app/workflows", icon: Workflow },
+
+     //WORKFLOWS
+    {
+      label: "Workflows",
+      icon: Workflow,
+      children: [
+        { label: "All Workflows", path: "/app/workflows" },
+        { label: "Create", path: "/app/workflows/new" },
+        { label: "Instances", path: "/app/workflows/instances" },
+        { label: "Tasks", path: "/app/workflows/tasks" },
+        { label: "Analytics", path: "/app/workflows/analytics" },
+      ],
+    },
+
     { label: "Settings", path: "/app/settings", icon: Settings },
   ];
 

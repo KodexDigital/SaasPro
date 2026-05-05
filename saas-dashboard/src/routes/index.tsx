@@ -4,8 +4,10 @@ import RegisterPage from "@/features/auth/RegisterPage";
 import DashboardPage from "@/features/dashboard/DashboardPage";
 import OrganizationsPage from "@/features/organizations/OrganizationsPage";
 import UsersPage from "@/features/users/UsersPage";
-import WorkflowsPage from "@/features/workflows/WorkflowsPage";
 import SettingsPage from "@/features/settings/SettingsPage";
+import WorkflowsPage from "@/features/workflows/pages/WorkflowsPage";
+import WorkflowFormPage from "@/features/workflows/pages/WorkflowFormPage";
+import WorkflowDetailsPage from "@/features/workflows/pages/WorkflowDetailsPage";
 import HomePage from "./HomePage";
 import AppLayout from "./layouts/AppLayout";
 
@@ -27,6 +29,8 @@ export default function AppRoutes() {
             <Route path="organizations" element={<OrganizationsPage />} />
             <Route path="users" element={<UsersPage />} />
             <Route path="workflows" element={<WorkflowsPage />} />
+            <Route path="workflows/new" element={<WorkflowFormPage />} />
+            <Route path="workflows/:id" element={<WorkflowDetailsPage />} />
             <Route path="settings" element={<SettingsPage />} />
         </Route>
 
